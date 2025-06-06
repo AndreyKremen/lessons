@@ -1,0 +1,135 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+
+p {
+font-size: 30px;
+line-height: 150%;
+}
+
+.new_p::first-line{
+background-color: aquamarine;
+color: red;
+}
+
+.new_p::first-letter{
+background-color: #ffffff;
+font-size: 100px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.sss1{
+background-color: tomato;
+color: bisque;
+}
+
+a{
+background-color: green;
+color: red;
+font-size: 40px;
+
+}
+a:hover::after{
+content: "ТИСНИ ЗАРАЗ";
+background-color: blue;
+color: bisque;
+font-size: 40px;
+margin-left: 10px;
+}
+
+
+button{
+margin: 10px 0 0 10px;
+background-color: rgb(143, 216, 238);
+padding: 5px 50px;
+font-size: 30px;
+font-weight: 100;
+border-radius: 25px;
+text-transform: uppercase ;
+border: none;
+}
+
+button:hover{
+cursor: pointer;
+background-color: green;
+color:chartreuse;
+font-weight: 700;
+}
+
+button:active{
+background-color: red;
+color: #ffffff;
+border: 2px solid;
+border-color:   #000000;
+}
+
+input{
+width: 500px;
+font-size: 30px;
+}
+
+input:focus{
+border: 3px solid rgb(13, 228, 67);
+outline: none;
+}
+
+.nth-child{
+width: 300px;
+background-color: aqua;
+text-align: center;
+padding: 10px 0;
+margin-bottom: 20px;
+}
+
+.nth-wrapper div:nth-child(3){
+background-color: red;
+}
+
+.nth-wrapper div:nth-child(even){
+background-color: green;
+}
+
+.nth-wrapper div:nth-child(6){
+background-color: rgb(68, 0, 255);
+margin-bottom: 100px;
+}
+
+.nth-wrapper div:nth-child(0){
+margin-left: 100px;
+}
+
+
+.nth-wrapper .nth-child:first-child{
+background-color: brown;
+color: #ffffff;
+text-align: end;
+padding: 10px 20px 10px 0;
+font-weight: 700;
+font-style: italic;
+}
+
+.nth-wrapper .nth-child:last-child{
+background-color: rgb(117, 58, 93);
+margin-bottom: 0;
+}
+
+h1{
+text-align: center;
+color:blue;
+}
+
+h1::before{
+content: "Місто велике превелике   ." url(icon/users-alt.png) ".    на Дніпрі";
+color: aqua;
+margin-right: 30px;
+font-style: italic;
+text-decoration: underline;
+font-size: 30px;
+}
+h1::after{
+content: url(icon/users-alt.png);
+padding-left: 50px;
+
+}
